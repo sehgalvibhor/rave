@@ -1,0 +1,6 @@
+<!--Will render seperate navigation bars if user is signed in or not. -->
+<% if !user_signed_in? %>
+ <%= render 'layouts/nav_guest' %>
+<% else %>
+ <%= render 'layouts/nav_user' %>
+<% end %>
